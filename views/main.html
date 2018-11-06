@@ -12,7 +12,7 @@
     <div id="lexcontainer">
     </div>
 </body>
-<script src="https://lidlus--crmdev.cs17.my.salesforce.com/lightning/lightning.out.js"></script>
+<script src="https://lidlus--crmdev.lightning.force.com/lightning/lightning.out.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js">
 </script>
@@ -36,11 +36,10 @@
         } else {
             // Transform the URL for Lightning
             var url = $.cookie("InstURL");
-            url = url.replace("my.salesforce", "lightning.force");
+            url = url.replace("cs17.my.salesforce", "lightning.force");
             $Lightning.use(appName, 
                 function() {
                     _lightningReady = true;
-                    //document.getElementById("lexcontainer").style.display = "";
                     if (typeof callback === "function") {
                         callback();
                     }
@@ -48,13 +47,14 @@
         }
     }
     function createGameCMP() {
-        debugger;
         setupLightning(function() {
             $Lightning.createComponent(
                 cmpName,
                 {}, 
                 "lexcontainer", 
                 function(cmp) {
+                    console.log("Component created!");
+                    console.log(cmp);
                 }
             );
         });

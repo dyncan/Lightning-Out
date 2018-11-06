@@ -2,9 +2,9 @@ $("#prodBtn").click(prodLogin);
 $("#sandBtn").click(sandLogin);
 
 var apiVersion = 'v43.0',
-    clientId = '3MVG9ahGHqp.k2_yS0j7c668oGyxFHYvPjYXUiTDF4B6hXVDUt.h6hEMNmKU02NzwpRwlJQbjYOtUU5aGUEPH',
+    clientId = '',
     loginUrl = 'https://login.salesforce.com/',
-    redirectURI = "https://couponapp.herokuapp.com/oauthcallback.html";
+    redirectURI = "https://coupon-management-app.herokuapp.com/oauthcallback.html";
 //proxyURL = 'https://localhost:18081/proxy/';
 
 
