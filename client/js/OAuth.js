@@ -4,9 +4,7 @@ $("#sandBtn").click(sandLogin);
 var apiVersion = 'v43.0',
     clientId = '',
     loginUrl = 'https://login.salesforce.com/',
-    redirectURI = "https://coupon-management-app.herokuapp.com/oauthcallback.html";
-//proxyURL = 'https://localhost:18081/proxy/';
-
+    redirectURI = "https://localhost:18081/oauthcallback.html";
 
 function prodLogin() {
     loginUrl = 'https://login.salesforce.com/';
