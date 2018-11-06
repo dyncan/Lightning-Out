@@ -1,0 +1,24 @@
+{
+    "name": "heroku-lightning",
+    "version": "1.0.0",
+    "description": "Simple tutorial for using Lightning Out with Node.js on Heroku",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "keywords": [
+        "Node.Js",
+        "Lightnig Component",
+        "Lightnig Out",
+        "API",
+        "Salesforce"
+    ],
+    "author": "Peter Dong",
+    "license": "MIT",
+    "devDependencies": {},
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "express": "^4.16.4",
+        "request": "^2.88.0"
+    }
+}

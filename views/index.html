@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login to Salesforce </title>
+    <link href="css/salesforce-lightning-design-system.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="slds" style="text-align: center;">
+        <div class="slds-modal__header" style="border-bottom: 1px solid #d8dde6;background-color: #FAFAF9;padding:50px 0;">
+            <h2 id="information" class="slds-text-heading--medium"> Welcome to Salesforce Lightning Out Demo <br />
+                To Start using, Select your Salesforce instance.</h2>
+        </div>
+        <div style="margin-top: 20px;">
+            <button type="button" id="prodBtn" class="slds-button slds-button_brand">Production</button>
+            <button type="button" id="sandBtn" class="slds-button slds-button_brand">Sandbox</button>
+        </div>
+    </div>
+    <script>
+        //do not redirect for localhost
+        if (window.location.protocol != "https:" && window.location.hostname != 'localhost') {
+            window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+        }
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script type="text/javascript" src="js/OAuth.js"></script>
+</body>
+
+</html>
